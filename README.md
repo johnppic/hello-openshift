@@ -5,6 +5,7 @@ Topics
 
 * YAML
 * Kubernetes Overview
+* OpenShift vs Kubernetes
 * Manually build an openshift app
 
 yaml
