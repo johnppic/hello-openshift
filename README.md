@@ -33,17 +33,22 @@ With Kubernetes we can quickly deploy our applications, scaling it according to 
 Learn how openshift components interact:
 * [Overview of Kubernetes Components](https://medium.com/@karthikeyan_krishnaswamy/overview-of-kubernetes-34d8e0e59b26)
 
+openshift vs kubernetes
+-----------------------
+The question “What’s the difference between Kubernetes and OpenShift?” comes up every now and then, and it is quite like asking: “What’s the difference between an engine and a car?”
 
-kubernetes api
---------------
+To answer the latter, a car is a product that immediately makes you productive: it is ready to get you where you want to go. The engine, in return, won’t get you anywhere unless you assemble it with other essential components that will form in the end a … car.
+
+* [Overview of OpenShift Components] (https://cloud.redhat.com/blog/enterprise-kubernetes-with-openshift-part-one)
+
+openshift api extends the kubernetes api
+----------------------------------------
 
 The core of Kubernetes' control plane is the API server. The API server exposes an HTTP API that lets end users, different parts of your cluster, and external components communicate with one another.
 
 The Kubernetes API lets you query and manipulate the state of objects in the Kubernetes API (for example: Pods, Namespaces, ConfigMaps, and Events).
 
 Most operations can be performed through the kubectl command-line interface or other command-line tools, such as kubeadm, which in turn use the API. However, you can also access the API directly using REST calls.
-
-Consider using one of the client libraries if you are writing an application using the Kubernetes API.
 
 Resources in this lesson:
 
@@ -59,7 +64,7 @@ Openshift Resources
 
 Links:
 * [Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
-* [Openshift API](https://docs.openshift.com/container-platform/4.5/rest_api/index.html)
+* [Openshift API](https://docs.openshift.com/container-platform/latest/rest_api/index.html)
 
 
 manually build an openshift app
