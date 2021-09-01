@@ -14,7 +14,7 @@ spec:
     app:
   sessionAffinity: None
   #Pick from below
-  type:
+  type: ClusterIP
 
 # Types of Kubernetes services
 # There are four types of Kubernetes services:
