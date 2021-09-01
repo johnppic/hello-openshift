@@ -40,7 +40,7 @@ The question “What’s the difference between Kubernetes and OpenShift?” com
 
 To answer the latter, a car is a product that immediately makes you productive: it is ready to get you where you want to go. The engine, in return, won’t get you anywhere unless you assemble it with other essential components that will form in the end a … car.
 
-* [Overview of OpenShift Components] (https://cloud.redhat.com/blog/enterprise-kubernetes-with-openshift-part-one)
+* [Overview of OpenShift Components](https://cloud.redhat.com/blog/enterprise-kubernetes-with-openshift-part-one)
 
 openshift api extends the kubernetes api
 ----------------------------------------
