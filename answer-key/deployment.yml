@@ -1,24 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld
+  name: hello-openshift-dep
   labels:
-    app: helloworld
+    app: hello-openshift
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: helloworld
+      app: hello-openshift
   template:
     metadata:
       labels:
-        app: helloworld
+        app: hello-openshift
     spec:
       containers:
-      - name: helloworld
+      - name: hello-openshift
         image: image-registry.openshift-image-registry.svc:5000/jpicarazzi/hello-openshift
+        env:
+        # learn about the downward api https://kubernetes.io/docs/tasks/inject-data-application/environment-variable-expose-pod-information/#the-downward-api
+        - name: HELLO
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
         ports:
         - name: web
           containerPort: 8090
           protocol: TCP
-
